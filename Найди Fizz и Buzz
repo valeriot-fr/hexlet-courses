@@ -6,3 +6,21 @@
 В остальных случаях выводится само число
 Функция принимает два параметра (begin и end), определяющих начало и конец диапазона (включительно). Для простоты считаем, что эти параметры 
 являются целыми числами больше нуля. Если диапазон пуст (в случае, когда begin > end), то функция просто ничего не печатает.
+
+
+const fizzBuzz = (start, end) => {
+  if (start <= end) {
+    for (let num = start; num <= end; num += 1) {
+      if (num % 3 === 0 && num % 5 === 0) {
+        console.log('FizzBuzz');
+      } else if (num % 3 === 0) {
+        console.log('Fizz');
+      } else if (num % 5 === 0) {
+        console.log('Buzz');
+      } else {
+        console.log(num); 
+        }
+    }
+  }
+};
+export default fizzBuzz;
